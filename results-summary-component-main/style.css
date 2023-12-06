@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'New font', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container{
+    width: 600px;
+    display: flex;
+    border-radius:30px;
+    box-shadow: 0px 10px 10px rgb(233, 233, 233),0px -10px 30px rgb(241, 241, 241) ;
+}
+.result{
+    width: 50%;
+    height: 100%;
+    padding: 35px 40px;
+    border-radius: 30px;
+    color:hsla(221, 100%, 96%, 0.8);
+    background: linear-gradient(to bottom, hsl(251, 97%, 62%), hsl(244, 84%, 56%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.container .result .score{
+    border-radius: 50%;
+    padding: 35px 45px;
+    text-align:center;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+.container .result .score h1{
+    font-size: 50px;
+    color:white;
+}
+.container .result .para{
+    font-size: 15px;
+    text-align: center;
+}
+.container h2{
+    color: white;
+}
+.summary{
+    padding: 30px;
+    width: 50%;
+}
+.summary > p{
+    font-weight: 700;
+    font-size: 18px;
+    color: hsl(224, 30%, 27%);
+    margin-bottom: 20px;
+}
+.section-scores{
+    margin-top: 10px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.section{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 5px;
+    /* background-color: aliceblue; */
+}
+.reaction{
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+.reaction .title{
+    color: rgb(228, 86, 86)
+    
+}
+
+.memory{
+background-color: hsla(39, 100%, 56%, 0.2);
+}
+.memory .title{
+    color: hsla(39, 100%, 56%, 1);
+}
+.verbal{
+    background-color:hsla(166, 100%, 37%, 0.1) ;
+}
+.verbal .title{
+    color: hsla(166, 100%, 37%, 1);
+}
+.visual{
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+.visual .title{
+    color: hsla(234, 85%, 45%, 1);
+}
+.title{
+    display: flex;
+    column-gap: 10px;
+}
+.section-scores p{
+    display:inline-block;
+}
+.btn{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.section .marks .total-score{
+    color: grey;
+}
+.marks{
+    display: flex;
+    column-gap: 5px;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        border-radius:0;
+        box-shadow: none;
+    }
+    .result {
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .summary{
+        width: 90%;
+}
+}
